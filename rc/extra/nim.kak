@@ -6,6 +6,8 @@
 
 hook global BufCreate .*\.nim(s|ble)? %{
     set-option buffer filetype nim
+    set-option buffer indentwidth 2
+    set-option buffer tabstop 2
 }
 
 # Highlighters
